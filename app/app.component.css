@@ -1,0 +1,98 @@
+/*nav bar*/
+nav {
+  background: #fff none repeat scroll 0 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in 0s;
+}
+nav.smaller{
+    height: 50px;
+}
+.logo{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 7px;
+    transition: all 0.25s ease 0s;
+    height: 75px;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.ctm-nav{
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    height: 95px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.menu{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin-bottom: 0;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-around;
+    list-style: outside none none;
+    background: #fff none repeat scroll 0 0;
+}
+.scrolled{
+    background: #fff none repeat scroll 0 0;
+    position: fixed;
+    width: 100%;
+}
+.menu >li:first-child{
+  border-left: 0 none;
+}
+.menu > li {
+    float: left;
+    transition: all 0.25s ease 0s;
+    width: calc(100% / 9);
+    height: 95px;
+    line-height: 95px;
+    position: static;
+    border-left: 1px solid rgba(2, 2, 2, 0.15)
+}
+.menu > li * {
+  line-height: 1.5em;
+}
+.menu li a {
+    text-decoration: none;
+}
+
+.nav-item
+{
+    color: #666;
+    display: inline-block;
+    margin: 0px;
+}
+.menu > li .nav-item{
+    line-height: 95px;
+    transition: all 0.25s ease 0s;
+    font-size: 1.4rem;
+    letter-spacing: 0.015rem;
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+}
+/*main img*/
+.main-img{
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+    background: url("http://www.mrwallpaper.com/wallpapers/yachting.jpg")no-repeat scroll center center;
+    background-size: cover;
+    margin-top:98px;
+    height: 700px;
+}
+
+@media (max-width: 768px){
+    .main-img {
+
+    }
+}
