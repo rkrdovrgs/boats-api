@@ -1,0 +1,1 @@
+{"version":3,"file":"searchBox.component.js","sourceRoot":"","sources":["../../app/searchBox/searchBox.component.ts"],"names":[],"mappings":";;;;;;;;AAAA,sCAA0C;AAQ1C,IAAa,kBAAkB;IAA/B;IAEA,CAAC;IAAD,yBAAC;AAAD,CAAC,AAFD,IAEC;AAFY,kBAAkB;IAN9B,gBAAS,CAAC;QACP,QAAQ,EAAE,YAAY;QACtB,WAAW,EAAE,0CAA0C;QACvD,SAAS,EAAE,CAAE,yCAAyC,CAAE;KAC3D,CAAC;GAEW,kBAAkB,CAE9B;AAFY,gDAAkB"}
