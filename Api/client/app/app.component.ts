@@ -10,13 +10,4 @@ import { Yacht } from './model/yacht';
 })
 
 export class AppComponent{   
-    boats:Yacht[];
-    constructor(private boatService: BoatsService)
-    {
-        this.boatService.getBoats()
-            .subscribe(boats => {
-                console.log(boats);
-                this.boats = boats;
-            });
-    }
 }
