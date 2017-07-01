@@ -1,0 +1,154 @@
+/*main img*/
+.main-img{
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+    background: url("http://www.mrwallpaper.com/wallpapers/yachting.jpg")no-repeat scroll center center;
+    background-size: cover;
+    margin-top:98px;
+    height: 700px;
+}
+/*Style for the list of boats*/
+.content{
+    min-height: 600px;
+    padding: 30px 0;
+}
+.padding-bo{
+    padding-bottom: 0;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+strong, .strong{
+    font-weight: 700;
+}
+h1{
+    font-size: 36px;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #333;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 0 0 15px;
+}
+.tag-line-text{
+    font-size: 18px;
+    text-align: center;
+}
+.listing-header{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0;
+    position: relative;
+}
+.listing-container{
+    padding-top: 35px;
+}
+.results-container-in{
+    position: relative;
+}
+.trending-listing .results-container-in{
+    float: none;
+    margin: 0 auto;
+}
+.trending-listing .results-container-in h2{
+    color: #777;
+    text-align: center;
+}
+.results-grid-view::before, .results-grid-view::after{
+    content: " ";
+    display: table;
+}
+.result-item::before,
+.result-item::after,
+.result-item-cont::before,
+.result-item-cont::after{
+    content: " ";
+    display: table;
+}
+.results-grid-view .result-item{
+    float: left;
+    margin-bottom: 40px;
+    margin-left: 2.3%;
+    width: 31%;
+}
+.result-item{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #eee;
+    height: 265px;
+    position: relative;
+}
+.media-box{
+    display: inline-block;
+    max-width: 100%;
+    position: relative;
+}
+.result-item-img .media-box img{
+    width: 750px;
+}
+a > img{
+    vertical-align: middle;
+}
+a img{
+    border: medium none;
+}
+img{
+    height: 80%;
+    max-width: 100%;
+}
+.results-grid-view .result-item-features{
+    padding-top: 5px;
+}
+.result-item-features{
+    border-top: 1px solid #eee;
+    line-height: normal;
+    padding: 0 20px;
+}
+ul.inline{
+    list-style-type: disc;
+    margin: 10px 0 10px 20px;
+    font-size: 12px;
+    margin: 10px 0;
+    padding: 0;
+}
+ul.inline > li{
+    display: inline-block;
+    margin-right: 5px;
+    color: #999;
+    text-align: left;
+}
+.result-item-features li{
+    margin-bottom: 5px;
+}
+.result-item-view-buttons::before,
+.result-item-view-buttons::after,
+.result-item-in::before,
+.result-item-in::after{
+    content: " ";
+    display: table;
+    vertical-align: bottom;
+}
+.result-item::after,
+.result-item-cont::after{
+    clear: both;
+}
+.result-item-view-buttons a i{
+    line-height: 2em;
+}
+.tools-bar{
+    float: left;
+}
+.info{
+    list-style: none;
+    padding-right: 10px;
+}
+.info > a
+         >i{
+             color: #333;
+         } 
+/*End Section of list boats*/
+
+@media (max-width: 768px){
+    .main-img {
+
+    }
+}

@@ -1,0 +1,42 @@
+<div class="yacht-container">
+    <div class="row">
+    <div class="col-md-3 col-sm-12 col-sm-12">
+        <div class="col-md-12 col-sm-12 col-sm-12">
+
+        </div>
+    </div>
+    <div class="col-md-9 col-sm-12 col-xs-12">
+        <div id="yacht-listing">
+    <div class="single-yacht col-md-4 col-sm-4 col-xs-12" style="display: block;"
+    *ngFor="let boat of boats">
+        <div class="listing-img">
+            <a href="#">
+                <div class="image" [ngStyle]="{'background': 'url(' + boat.imgUrl.url + ') no-repeat bottom center'}" 
+                 style="min-height:150px;">
+                </div>
+            </a>
+        </div>
+        <div class="boat-content">
+            <div class="boat-title">
+                <h5>
+                    <a href="#">
+                        {{boat.Make}}
+                    </a>
+                </h5>
+            </div>
+            <div class="boat-price">
+                {{boat.Price}}
+            </div>
+            <div class="boat-model">
+                {{boat.Model}}
+            </div>
+            <div class="boat-location">
+                {{boat.Location}}
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+</div>
+

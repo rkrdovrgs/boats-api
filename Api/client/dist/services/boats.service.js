@@ -10,27 +10,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var boats_service_1 = require("./services/boats.service");
-var AppComponent = (function () {
-    function AppComponent(boatService) {
-        var _this = this;
-        this.boatService = boatService;
-        this.boatService.getBoats()
-            .subscribe(function (boats) {
-            console.log(boats);
-            _this.boats = boats;
-        });
+var http_1 = require("@angular/http");
+require("rxjs/add/operator/map");
+var BoatsService = (function () {
+    function BoatsService(http) {
+        this.http = http;
+        console.log('boats service initialize');
     }
-    return AppComponent;
+    BoatsService.prototype.getBoats = function () {
+        return this.http.get('http://localhost:3000/api/boats')
+            .map(function (res) { return res.json(); });
+    };
+    return BoatsService;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'my-app',
-        templateUrl: './app/app.component.html',
-        styleUrls: ['./app/app.component.css'],
-        providers: [boats_service_1.BoatsService]
-    }),
-    __metadata("design:paramtypes", [boats_service_1.BoatsService])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+BoatsService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], BoatsService);
+exports.BoatsService = BoatsService;
+//# sourceMappingURL=boats.service.js.map

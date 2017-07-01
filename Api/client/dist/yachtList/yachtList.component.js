@@ -10,27 +10,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var boats_service_1 = require("./services/boats.service");
-var AppComponent = (function () {
-    function AppComponent(boatService) {
+var boats_service_1 = require("../services/boats.service");
+var YachtListComponent = (function () {
+    function YachtListComponent(boatsService) {
         var _this = this;
-        this.boatService = boatService;
-        this.boatService.getBoats()
+        this.boatsService = boatsService;
+        this.boatsService.getBoats()
             .subscribe(function (boats) {
-            console.log(boats);
             _this.boats = boats;
         });
     }
-    return AppComponent;
+    return YachtListComponent;
 }());
-AppComponent = __decorate([
+YachtListComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        templateUrl: './app/app.component.html',
-        styleUrls: ['./app/app.component.css'],
-        providers: [boats_service_1.BoatsService]
+        selector: 'yacht-list',
+        templateUrl: './app/yachtList/yachtList.component.html',
+        styleUrls: ['./app/yachtList/yachtList.component.css']
     }),
     __metadata("design:paramtypes", [boats_service_1.BoatsService])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], YachtListComponent);
+exports.YachtListComponent = YachtListComponent;
+//# sourceMappingURL=yachtList.component.js.map

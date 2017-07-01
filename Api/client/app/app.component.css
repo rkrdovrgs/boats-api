@@ -80,19 +80,3 @@ nav.smaller{
     text-transform: capitalize;
     width: 100%;
 }
-/*main img*/
-.main-img{
-    padding: 60px 0;
-    text-align: center;
-    color: #fff;
-    background: url("http://www.mrwallpaper.com/wallpapers/yachting.jpg")no-repeat scroll center center;
-    background-size: cover;
-    margin-top:98px;
-    height: 700px;
-}
-
-@media (max-width: 768px){
-    .main-img {
-
-    }
-}

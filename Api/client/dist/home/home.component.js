@@ -10,9 +10,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var boats_service_1 = require("./services/boats.service");
-var AppComponent = (function () {
-    function AppComponent(boatService) {
+var boats_service_1 = require("../services/boats.service");
+var HomeComponent = (function () {
+    function HomeComponent(boatService) {
         var _this = this;
         this.boatService = boatService;
         this.boatService.getBoats()
@@ -21,16 +21,15 @@ var AppComponent = (function () {
             _this.boats = boats;
         });
     }
-    return AppComponent;
+    return HomeComponent;
 }());
-AppComponent = __decorate([
+HomeComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        templateUrl: './app/app.component.html',
-        styleUrls: ['./app/app.component.css'],
-        providers: [boats_service_1.BoatsService]
+        selector: 'home-page',
+        templateUrl: './app/home/home.component.html',
+        styleUrls: ['./app/home/home.component.css']
     }),
     __metadata("design:paramtypes", [boats_service_1.BoatsService])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], HomeComponent);
+exports.HomeComponent = HomeComponent;
+//# sourceMappingURL=home.component.js.map

@@ -1,0 +1,78 @@
+<main>
+    <div class="main-img">
+        <div class="container">
+            <div class="row">
+               <div class="col-sm-4">
+                <!-- searchBox component -->
+                <search-box></search-box>
+               </div>
+            </div>
+        </div>
+    </div>    
+<!-- List of Boats -->
+  <div class="main">
+    <div  id="content" class="content full padding-bo">
+     <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="uppercase strong">
+                    <p style="text-align: center;"><!-- Some Text here --></p>
+                    <p style="text-align: left;"></p>
+                </h1>
+                <p style="text-align: left;"></p>
+                <p class="tag-line-text"></p>
+                <h3 style="text-align: center;">
+                    <span style="color: #999999"><!--Another some text here--></span>
+                </h3>
+                <p style="text-align: left;"></p>
+            </div>
+            <div class="col-md-6" style="color: #999">
+                <p><!-- Some info here --></p>
+            </div>
+        </div>
+     </div>
+     <div class="container">
+        <div class="row">
+            <div class="col-md-12 results-container">
+                <Section class="listing-block trending-listing">
+                    <div class="listing-header"></div>
+                    <div class="listing-container">
+                        <div class="results-container-in col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h2>YACHT FOR SALE</h2>
+                            <div id="results-holder-featured" class="results-grid-view row">
+                                <div *ngFor="let boat of boats" class="result-item format-standard" style="height: auto; width: 26.7%; margin: 3.3%;">
+                                    <div class="result-item-img">
+                                        <a class="media-box" href="#">
+                                            <img class="attachment-600x400 size-600x400 wp-post-image" src="{{boat.imgUrl.url}}" srcset="{{boat.imgUrl.srcset}}"
+                                             sizes="(max-width: 600px) 100vw, 600px">
+                                        </a>
+                                    </div>
+                                    <div class="result-item-features">
+                                        <ul class="inline">
+                                            <li>{{boat.Make}}</li>
+                                            <li style="display: block;">{{boat.Model}}</li>
+                                            <li style="display: block">{{boat.Price}}</li>
+                                        </ul>
+                                    </div>
+                                    <div class="result-item-view-buttons tools-bar" style="position: absolute; bottom: 0; right: 0;">
+                                        <ul>
+                                            <li class="info">
+                                                <a href="#">
+                                                    <i class="glyphicon glyphicon-info-sign" style="display: inline-block;"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Section>
+            </div>
+        </div>
+     </div>
+    </div>
+  </div>
+<!-- End section of list boats -->
+<!-- router outlet -->
+</main>
