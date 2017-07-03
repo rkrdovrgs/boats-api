@@ -4,14 +4,15 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "npm run clean && concurrently \"npm run assets:w\" \"npm run tsc:w\" \"npm run server:w\" ",
+    "start": "npm run clean && concurrently \"npm run assets:w\" \"npm run compile:w\" \"npm run server:w\" ",
     "clean": "del-cli public/dist",
     "assets": "concurrently \"cpx public/src/**/*.{html,css} public/dist/app\" \"cpx public/{index.html,systemjs.config.js} public/dist\" \"cpx public/content/**/*.{css,jpg} public/dist/content\"",
     "assets:w": "concurrently \"cpx public/src/**/*.{html,css} public/dist/app -w\" \"cpx public/{index.html,systemjs.config.js} public/dist -w\" \"cpx public/content/**/*.{css,jpg} public/dist/content -w\"",
-    "tsc": "./node_modules/.bin/tsc --p public/tsconfig.json",
-    "tsc:w": "./node_modules/.bin/tsc --p public/tsconfig.json -w",
-    "server:w": "./node_modules/.bin/nodemon --exec ./node_modules/.bin/ts-node -- ./server.ts",
-    "postinstall": "npm run ./node_modules/.bin/tsc && npm run clean && npm run assets && npm run tsc"
+    "compile": "tsc --p public/tsconfig.json",
+    "compile:w": "tsc --p public/tsconfig.json -w",
+    "compile:server": "tsc",
+    "server:w": "nodemon --exec ts-node -- ./server.ts",
+    "postinstall": "npm run clean && npm run compile:server && npm run assets && npm run compile"
   },
   "repository": {
     "type": "git",
