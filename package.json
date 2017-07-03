@@ -11,7 +11,7 @@
     "tsc": "./node_modules/.bin/tsc --p public/tsconfig.json",
     "tsc:w": "./node_modules/.bin/tsc --p public/tsconfig.json -w",
     "server:w": "./node_modules/.bin/nodemon --exec ./node_modules/.bin/ts-node -- ./server.ts",
-    "postinstall": "./node_modules/.bin/tsc && npm run clean && npm run assets && npm run tsc"
+    "postinstall": "npm run ./node_modules/.bin/tsc && npm run clean && npm run assets && npm run tsc"
   },
   "repository": {
     "type": "git",
