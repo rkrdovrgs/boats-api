@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "npm run clean && concurrently \"npm run assets:w\" \"npm run compile:w\" \"npm run server:w\" ",
+    "start:dev": "npm run clean && concurrently \"npm run assets:w\" \"npm run compile:w\" \"npm run server:w\" ",
     "clean": "del-cli public/dist",
     "assets": "concurrently \"cpx public/src/**/*.{html,css} public/dist/app\" \"cpx public/{index.html,systemjs.config.js} public/dist\" \"cpx public/content/**/*.{css,jpg} public/dist/content\"",
     "assets:w": "concurrently \"cpx public/src/**/*.{html,css} public/dist/app -w\" \"cpx public/{index.html,systemjs.config.js} public/dist -w\" \"cpx public/content/**/*.{css,jpg} public/dist/content -w\"",
