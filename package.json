@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/rkrdovrgs/boats-api#readme",
   "devDependencies": {
-    "concurrently": "^3.4.0",
     "nodemon": "^1.11.0",
     "ts-node": "^3.1.0"
   },
@@ -45,6 +44,7 @@
     "@types/node": "^8.0.7",
     "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
+    "concurrently": "^3.4.0",
     "core-js": "^2.4.1",
     "cpx": "^1.5.0",
     "del-cli": "^1.1.0",
