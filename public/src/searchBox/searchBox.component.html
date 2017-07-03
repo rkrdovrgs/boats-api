@@ -1,0 +1,106 @@
+<div class="form-style">
+    <h1>Boats For Sale</h1>
+    <form #form="ngForm" (ngSubmit)="search()">
+        <div class="form-group">
+            <input type="text" class="form-control" name="searchbox" placeholder="Manufacturer/Model">
+        </div>
+        <div class="form-group">
+            <label name="newUsed" class="label-form">New/Used</label>
+            <div class="option">
+                <label class="radio-searchbox">All
+            <input type="radio" id="option_all" name="selected" value="" checked="true">
+          </label>
+            </div>
+            <div class="option">
+                <label class="radio-searchbox">New
+            <input type="radio" id="option_new" name="selected" value="true">
+          </label>
+            </div>
+            <div class="option">
+                <label class="radio-searchbox">Used
+            <input type="radio" id="option_used" name="selected" value="false">
+          </label>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label name="newUsed" class="label-form">Boat Type</label>
+            <div class="option">
+                <label class="radio-searchbox">All
+                    <input type="radio" id="option_all_boattype" name="selectedType" value="" checked="true">
+                </label>
+            </div>
+            <div class="option">
+                <label class="radio-searchbox">Power
+                    <input type="radio" id="option_new_boattype" name="selectedType" value="true">
+                </label>
+            </div>
+            <div class="option">
+                <label class="radio-searchbox">Sail
+                    <input type="radio" id="option_sail_boattype" name="selectedType" value="false">
+                </label>
+            </div>
+        </div>
+        <br/>
+        <div class="form-group">
+            <div class="optionLength">
+                <label name="lengthlabel">Length</label>
+            </div>
+            <div class="optionLengthRadio">
+                <input type="radio" name="option_length" id="option_ft">
+                <span>ft</span>
+            </div>
+            <div class="optionLengthRadio">
+                <input type="radio" name="option_length" id="option_m">
+                <span>m</span>
+            </div>
+            <div class="optionLength">
+                <input type="number" name="length_number" id="start_length" min="0" max="10" placeholder="start">
+            </div>
+            <div class="optionLengthRadio" style=" width: 10%">
+                <span>to</span>
+            </div>
+            <div class="optionLength">
+                <input type="number" name="length_number" id="start_length" min="0" max="10" placeholder="end">
+            </div>
+        </div>
+        <br/>
+        <div class="form-group">
+            <div class="optionLength" style="width:50%">
+                <label name="lengthlabel">Year</label>
+            </div>
+            <select class="selectedoption">
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+            <option>2014</option>
+          </select>
+            <div class="optionLengthRadio" style=" width: 10%">
+                <span>to</span>
+            </div>
+            <select class="selectedoption">
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+            <option>2014</option>
+          </select>
+        </div>
+        <div class="form-group">
+            <div class="optionLength" style="width:50%">
+                <label name="lengthlabel">Price</label>
+            </div>
+            <div class="optionLength">
+                <input type="number" name="length_number" id="start_length" min="0" max="10" placeholder="start">
+            </div>
+            <div class="optionLengthRadio" style=" width: 10%">
+                <span>to</span>
+            </div>
+            <div class="optionLength">
+                <input type="number" name="length_number" id="start_length" min="0" max="10" placeholder="end">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-lg btn-primary">
+         Search
+        </button>
+    </form>
+</div>

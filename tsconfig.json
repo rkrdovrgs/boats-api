@@ -1,0 +1,11 @@
+{
+    "exclude": [
+        "public",
+        "node_modules"
+    ],
+    "compilerOptions": {
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    }
+}
