@@ -7,7 +7,7 @@ export class BoatsService {
     constructor(private http: Http) { }
 
     getBoats() {
-        return this.http.get('http://localhost:3000/api/boats')
+        return this.http.get('/api/boats')
             .map(res => res.json());
     }
 }
